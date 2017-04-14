@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>GA Form Homework</title>
+</head>
+<body>
+    <header>
+        <a href="">
+            <img src="./img/logo.png" alt="logo">
+        </a>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Front-End Web Development</h2>
+            <h1>Start your application</h1>
+            <p>Wheter you're still exploring or you are ready to apply, you've come to the right place</p>
+            <div class="row clearfix">
+                <div class=" column column--two-thirds">
+                    <form class="form" action="index.html" method="post">
+                        <div class="form-group label-hidden">
+                            <label for="text" class="visually-hidden">
+                                name
+                            </label>
+                            <input type="text" text="text" placeholder="Your Full Name" id="name">
+                        </div>
+                        <div class="form-group label-hidden">
+                            <label for="email visually-hidden" class="visually-hidden">
+                                email
+                            </label>
+                            <input type="email" name="email" placeholder="Your Email" id="email" >
+                        </div>
+                        <div class="form-group label-hidden">
+                            <label for="tel visually-hidden" class="visually-hidden">
+                                telephone
+                            </label>
+                            <input type="tel" name="tel" placeholder="Your Phone Number" id="tel">
+                        </div>
+                        <div class="form-group form-select">
+                            <label for="location">
+                                Where are you thinking to take the course?
+                            </label>
+                            <select name="location">
+                                <option value="atlanta">Atlanta</option>
+                                <option value="Boston">Boston</option>
+                                <option value="Brisbane">Brisbane</option>
+                                <option value="Brisbane">Chicago</option>
+                                <option value="London" selected>London</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" name="updates" value="updates" id="updates">
+                            <label for="updates">Send me updates on  the courses, special events and GA news</label>
+                        </div>
+                        <div class="form-group form-button">
+                            <button type="submit" name="button">
+                                Continue
+                            </button>
+                        </div>
+                    </form>
+                    <p class="terms">
+                        <i>
+                            By providing us with your email, you agree to the terms of our <a href="#">Privacy Policy </a>and <a href="#">Terms of Service</a>
+                        </i>
+                    </p>
+                </div>
+                <div class=" column column column--one-third">
+                    <aside>
+                        <p>
+                            Fill out the contact information to:
+                            <ul>
+                                <li>Receive a course sylabus</li>
+                                <li>Get in touch with the admissions councelor in your city</li>
+                                <li>Start an application to front end development</li>
+                            </ul>
+                        </p>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

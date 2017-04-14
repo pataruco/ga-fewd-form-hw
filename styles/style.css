@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+
+/*grey: #f6f6f6
+dark grey: #dadada
+red: #ff003d
+dark red: #df0000*/
+
+:root, html, body {
+    background-color: #f6f6f6;
+    color: black;
+    font-size: 14px;
+}
+
+body {
+    margin:0;
+    font-family: Georgia;
+}
+
+img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+header {
+    background-color: black;
+}
+
+header a {
+    display: inline-block;
+    padding: 20px;
+    width: 400px;
+}
+
+h1, h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+.label-hidden label, .label-hidden input  {
+    display: block;
+}
+
+.label-hidden input {
+    width: 100%;
+    height: 50px;
+    background-color: #dadada;
+    border: none;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #9f9d98;
+    padding-left: 20px;
+    transition: .5s ease background-color, outline;
+}
+
+.label-hidden input:focus {
+    background-color: #9f9d98;
+    outline: 1px solid transparent;
+}
+
+.form-select {
+    margin: 40px 0;
+}
+
+.form-select label, .form-select select {
+    display: block;
+    width: 100%;
+}
+
+.form-select label {
+    margin-bottom: 10px;
+}
+
+.form-button {
+    margin: 20px 0;
+}
+
+.form-button button {
+    display: block;
+    padding: 1em 1.25em;
+    color: white;
+    background-color: #ff003d;
+    border: none;
+    border-radius: .25em;
+    font-size: 1.1rem;
+    box-shadow: -4px 4px 00 #df0000;
+    transition: .5s ease box-shadow;
+}
+
+.form-button button:hover, .form-button button:focus {
+    box-shadow: -6px 6px 00 #df0000;
+}
+
+.terms, .terms a {
+    font-size: .75rem;
+    color: #9f9d98;
+}
+
+aside {
+    background-color: #dadada;
+    padding: 20px;
+}
+
+aside p {
+    margin-top: 0;
+}
+
+aside ul {
+    padding-left: 20px;
+    list-style-type: square;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.row {
+    margin: 0 -10px;
+}
+
+.column {
+    float:left;
+    padding: 0 10px;
+}
+
+.column--two-thirds {
+    width: 66.666%;
+}
+
+.column--one-third {
+    width: 33.333%;
+}
+
+.clearfix::before, .clearfix::after {
+    content: '';
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+
+.visually-hidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
